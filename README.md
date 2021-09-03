@@ -1,2 +1,2 @@
-# rashad.github.io
+# Personal Website
 Personal website and blog
