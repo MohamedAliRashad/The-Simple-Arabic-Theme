@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Learn and Build
+title: Learn to Build
 email: m.rashadnow@gmail.com
 author: Mohamed Rashad
 
@@ -60,7 +60,7 @@ yat:
   date_format: "%b %d, %Y"
 
 # If you want more debug log, you can set true
-# debug: false
+# debug: true
 
 # If you don't want transparent header, you can set false
 # header_transparent: true
@@ -77,7 +77,7 @@ yat:
 # If you want to change site language, you can set lang option
 # lang: "en"  # default lang is en
 
-# Translate languges
+# Translate languages
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
 #   - lang: en
@@ -110,7 +110,7 @@ yat:
 # spacegrey: #353535
 # snowwhite: #ffffff
 #
-# theme_color: snowwhite
+theme_color: snowwhite
 #
 # Custom color as below:
 # theme_color: "#882250"
@@ -120,7 +120,7 @@ yat:
 # orangered: #ff5100
 # greatgold: #f2cb05
 # greenblue: #389092
-#
+
 # brand_color: orangered
 #
 # Custom color as below:
