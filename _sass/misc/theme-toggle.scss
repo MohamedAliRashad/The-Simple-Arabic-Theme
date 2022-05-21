@@ -1,9 +1,8 @@
 .theme-toggle {
   position: relative;
-  width: $base-font-size * 7.65;
+  width: $base-font-size * 9;
   margin-top: 10px;
-  margin-right: 60px;
-  margin-left: auto;
+  margin-left: 50px;
   transition: .3s cubic-bezier(.4,.03,0,1);
 
   label, .toggle {
@@ -28,8 +27,8 @@
   .names {
     font-size: 1em;
     font-weight: bolder;
-    width: 76%;
-    margin-left: 12%;
+    width: 83%;
+    margin-right: 7%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -52,7 +51,7 @@
 
   /* Toggle */
   [type="checkbox"]:checked ~ label .toggle {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     background-color: #34323D;
   }
 
@@ -65,12 +64,12 @@
   }
 
   @include media-query(1024px) {
-    margin-right: 35px;
+    margin-left: 35px;
   }
 
   @include media-query($on-palm) {
-    width: $base-font-size * 6.65;
-    margin-right: 20px;
+    width: $base-font-size * 9;
+    margin-left: 20px;
 
     .names {
       font-size: .85em;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<!-- <html lang="{{ page.lang | default: site.lang | default: 'en' }}"> -->
+  <html lang="ar">
 
   {%- include head.html -%}
 
@@ -14,8 +15,8 @@
     {%- include extensions/theme-toggle.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="wrapper" data-is-touch="false" dir="rtl">
+          {{content}} 
       </div>
     </main>
 

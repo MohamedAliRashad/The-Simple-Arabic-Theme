@@ -135,7 +135,7 @@ html {
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 24px;
+      margin-right: 15px;
       &:hover {
         text-decoration: underline;
       }
@@ -287,14 +287,15 @@ html {
       text-decoration: none;
 
       &:after {
-        content: 'NEW';
+        content: 'جديد';
         position: absolute;
-        margin-left: 8px;
+        margin-right: 8px;
         margin-top: 3px;
         padding: 0px 3px;
         background-color: $brand-color;
         color: #fff;
-        font-size: 10px;
+        font-size: 12px;
+        font-family: 'Droid Arabic Kufi', serif;
         font-weight: 600;
         border-radius: 2px;
       }
@@ -473,14 +474,15 @@ html {
         }
 
         &:after {
-          content: 'NEW';
+          content: 'جديد';
           position: absolute;
-          margin-left: 8px;
+          margin-right: 8px;
           margin-top: 3px;
           padding: 0px 3px;
           background-color: $brand-color;
           color: #fff;
-          font-size: 10px;
+          font-size: 12px;
+          font-family: 'Droid Arabic Kufi', serif;
           font-weight: 600;
           border-radius: 2px;
         }
@@ -749,14 +751,15 @@ html {
     }
 
     &:after {
-      content: 'NEW';
+      content: 'جديد';
       position: absolute;
-      margin-left: 8px;
+      margin-right: 8px;
       margin-top: 3px;
       padding: 0px 3px;
       background-color: $brand-color;
       color: #fff;
-      font-size: 10px;
+      font-size: 12px;
+      font-family: 'Droid Arabic Kufi', serif;
       font-weight: 600;
       border-radius: 2px;
     }
