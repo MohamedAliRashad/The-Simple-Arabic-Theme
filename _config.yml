@@ -26,7 +26,8 @@
 
 title: "" # Learn to Build
 email: m.rashadnow@gmail.com
-author: Mohamed Rashad
+# author: Mohamed Rashad
+author: محمد رشاد
 
 # theme: owner/name --> Don't forget to remove/comment the gem-based theme option
 remote_theme: "MohamedAliRashad/Commit-to-build"
@@ -43,16 +44,16 @@ remote_theme: "MohamedAliRashad/Commit-to-build"
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} <a href='https://github.com/MohamedAliRashad'>{author}</a>"
+# copyright: "Unpublished Work (cleft) 2017-{currentYear} <a href='https://github.com/MohamedAliRashad'>{author}</a>"
+copyright: "ﻷن الهدف من هذا التصميم هو نشر الأفكار باللغة العربية، فلا يوجد حقوق على المحتوى ويمكنك استخدامه ونشره بأي شكل ممكن."
+# copyright: "قام  <a href='https://github.com/MohamedAliRashad'>{author}</a> بإنشاء هذا التصميم فى وقت فراغه "
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The personal opinions of Mohamed Rashad in Arabic with some useful technical stuff 
 
-baseurl: "/Commit-to-build" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mohamedalirashad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-favicon: "/Commit-to-build/assets/images/ramadan.svg" # the favicon for your site
+favicon: "assets/images/ramadan.svg" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -157,7 +158,7 @@ header_pages:
   - index.html
   - archives.html
   - categories.html
-  - tags.html
+  - make_post.html
   - about.html
 
 # Page default value
