@@ -1,0 +1,51 @@
+---
+layout: default
+title: اصنع محتوى
+---
+
+<div style="font-family:'Droid Arabic Kufi';">
+    <textarea id="post_maker" placeholder="اصنع محتواك"></textarea>
+    <br>
+    <form>
+        <label for="title">عنوان:</label>
+        <input type="text" id="title" name="title"><br>
+
+        <label for="author">اسم الكاتب:</label>
+        <input type="text" id="author" name="author"><br>
+
+        <label for="subject">موضوع المقالة:</label>
+        <input type="text" id="subject" name="subject"><br>
+
+        <div style="text-align:center;">
+            <button class="btn" onclick='doDL()''><i class="fa fa-download"></i> Download</button>
+        </div>
+        </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/poush/random-animal/dist/random-animal.min.js"></script>
+    <script>
+        const editor = new EasyMDE({ element: document.getElementById('post_maker'), direction: 'rtl', previewImagesInEditor: true, sideBySideFullscreen: false, status: false, toolbar: false });
+        EasyMDE.toggleSideBySide(editor);
+        
+        function download(filename, text) {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+
+            element.style.display = 'none';
+            document.body.appendChild(element);
+
+            element.click();
+
+            document.body.removeChild(element);
+            }
+
+        function doDL() {
+            header = "---\nlayout: post \ntitle: \nsubheading: \nauthor: \ncategories: \nsidebar: [] \n---\n"
+            s = editor.value();
+            result = header.concat(s);
+            let today = new Date().toISOString().slice(0, 10)
+            let name = randomAnimal()
+            download(`${today}-${name.toLowerCase().replace(/ /g,"-")}.md`, result);
+        }
+    </script>
+</div>
