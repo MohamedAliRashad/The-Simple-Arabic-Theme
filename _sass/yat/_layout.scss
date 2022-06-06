@@ -192,7 +192,7 @@ html {
   @include relative-font-size(1.0);
   color: $footer-text-color;
   background-color: $footer-background-color;
-  text-align: left;
+  text-align: right;
   transition: background-color 0.2s;
 
   .site-footer-inner {
@@ -694,7 +694,7 @@ html {
   }
 
   .sidebar {
-    padding-left: 8px;
+    padding-right: 100px;
     transition: top 0.2s, display 0.2s;
 
     @include flex-sticky($header-height + 20px);

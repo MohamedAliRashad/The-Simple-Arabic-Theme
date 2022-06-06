@@ -6,10 +6,10 @@ if (!Element.prototype.matches) {
     Element.prototype.msMatchesSelector ||
     Element.prototype.oMatchesSelector ||
     Element.prototype.webkitMatchesSelector ||
-    function(s) {
+    function (s) {
       var matches = (this.document || this.ownerDocument).querySelectorAll(s),
         i = matches.length;
-      while (--i >= 0 && matches.item(i) !== this) {}
+      while (--i >= 0 && matches.item(i) !== this) { }
       return i > -1;
     };
 }
@@ -44,15 +44,37 @@ function smoothScrollTo(y, time) {
   }
 
   for (var i = 0; i <= count; i++) {
-    (function() {
+    (function () {
       var cur = i;
-      _scrollTimer[cur] = setTimeout(function() {
+      _scrollTimer[cur] = setTimeout(function () {
         window.scrollTo(
           scrollPos.x,
-          scrollPos.y + length * easeInOut(cur/count)
+          scrollPos.y + length * easeInOut(cur / count)
         );
       }, (time / count) * cur);
     })();
   }
 }
 
+function getArabicNumbers(str) {
+  var map = ["&\#1632;", "&\#1633;", "&\#1634;", "&\#1635;", "&\#1636;", "&\#1637;", "&\#1638;", "&\#1639;", "&\#1640;", "&\#1641;"];
+  var newStr = "";
+
+  str = String(str);
+
+  for (i = 0; i < str.length; i++) {
+    newStr += map[parseInt(str.charAt(i))];
+  }
+
+  return newStr;
+}
+
+var replaceDigits = function () {
+  var map = ["&\#1776;", "&\#1777;", "&\#1778;", "&\#1779;", "&\#1780;", "&\#1781;", "&\#1782;", "&\#1783;", "&\#1784;", "&\#1785;"]
+  document.body.innerHTML = document.body.innerHTML.replace(/\d(?=[^<>]*(<|$))/g, function ($0) { return map[$0] });
+}
+
+function auto_grow(element) {
+  element.style.height = "5px";
+  element.style.height = (element.scrollHeight)+"px";
+}
