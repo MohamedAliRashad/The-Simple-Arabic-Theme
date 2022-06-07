@@ -51,7 +51,7 @@ copyright: "ﻷن الهدف من هذا التصميم هو نشر الأفكا
 description: >- # this means to ignore newlines until "baseurl:"
   The personal opinions of Mohamed Rashad in Arabic with some useful technical stuff 
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/Commit-to-build" # the subpath of your site, e.g. /blog
 url: "https://mohamedalirashad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "assets/images/ramadan.svg" # the favicon for your site
 
