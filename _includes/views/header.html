@@ -39,18 +39,7 @@
                 <a class="page-link" style="font-family:'Droid Arabic Kufi'" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a> &nbsp;
               {%- endif -%}
             {%- endfor -%}
-
-            {%- assign name = 'translate_langs' -%}
-            {%- include functions.html func='get_value' -%}
-            {%- assign translate_langs = return -%}
-            {%- if translate_langs.size > 0 -%}
-              {%- assign name = 'lang' -%}
-              {%- include functions.html func='get_value' default='en' -%}
-              {%- assign lang = return -%}
-              <span class="page-link">
-                  {%- include extensions/google-translate.html -%}
-              </span>
-            {%- endif -%}
+            <div></div>
           </div>
         </nav>
       {%- endif -%}
