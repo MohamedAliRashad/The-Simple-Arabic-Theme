@@ -4,48 +4,97 @@ title: اصنع محتوى
 ---
 
 <div style="font-family:'Droid Arabic Kufi';">
-    <textarea id="post_maker" placeholder="اصنع محتواك"></textarea>
+    <textarea id="post-maker" placeholder="اصنع محتواك"></textarea>
     <br>
-    <form>
-        <label for="title">عنوان:</label>
-        <input type="text" id="title" name="title"><br>
-
-        <label for="author">اسم الكاتب:</label>
-        <input type="text" id="author" name="author"><br>
-
-        <label for="subject">موضوع المقالة:</label>
-        <input type="text" id="subject" name="subject"><br>
-
+    <form id="post-details">
+        <label for="title" class="post">عنوان:</label>
+        <input type="text" id="title-input" oninput="onlyArabic(this)"><br>
+        
+        <label for="subheader" class="post">عنوان فرعى:</label>
+        <input type="text" id="subheader-input" oninput="onlyArabic(this)"><br>
+        
+        <label for="author" class="post">اسم الكاتب:</label>
+        <input type="text" id="author-input" oninput="onlyArabic(this)"><br>
+        
+        <label for="subject" class="post">موضوع المقالة:</label>
+        <input type="text" id="subject-input" oninput="onlyArabic(this)"><br>
+        
+        <br>
         <div style="text-align:center;">
-            <button class="btn" onclick='doDL()''><i class="fa fa-download"></i> Download</button>
+            <button class="btn" onclick='doDL()''>
+                <img src="assets/images/download_button.svg" class="filter-green">
+            </button>
         </div>
-        </form>
-
+    </form>
     <script src="https://cdn.jsdelivr.net/gh/poush/random-animal/dist/random-animal.min.js"></script>
     <script>
-        const editor = new EasyMDE({ element: document.getElementById('post_maker'), direction: 'rtl', previewImagesInEditor: true, sideBySideFullscreen: false, status: false, toolbar: false });
+        const editor = new EasyMDE({ element: document.getElementById('post-maker'), direction: 'rtl', previewImagesInEditor: true, sideBySideFullscreen: false, status: false, toolbar: false, spellChecker: false });
         EasyMDE.toggleSideBySide(editor);
         
         function download(filename, text) {
             var element = document.createElement('a');
             element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
             element.setAttribute('download', filename);
-
+            
             element.style.display = 'none';
             document.body.appendChild(element);
-
+            
             element.click();
 
             document.body.removeChild(element);
             }
 
         function doDL() {
-            header = "---\nlayout: post \ntitle: \nsubheading: \nauthor: \ncategories: \nsidebar: [] \n---\n"
-            s = editor.value();
-            result = header.concat(s);
+            validateForm()
+
+            var a = document.forms["post-details"]["title-input"].value;
+            var b = document.forms["post-details"]["subheader-input"].value;
+            var c = document.forms["post-details"]["author-input"].value;
+            var d = document.forms["post-details"]["subject-input"].value;
+            
+            let header = `---\nlayout: post \ntitle: ${a} \nsubheading: ${b} \nauthor: ${c} \ncategories: ${d} \nsidebar: [] \n---\n`
+            var text = editor.value();
+            
+            // var converter = new Showdown.converter();
+            // var html = converter.makeHtml(text);
+            // result = header.concat(html);
+            
+            result = header.concat(text);
             let today = new Date().toISOString().slice(0, 10)
-            let name = randomAnimal()
+            // let name = document.getElementById("title-input").value;
+            let name = randomAnimal() 
             download(`${today}-${name.toLowerCase().replace(/ /g,"-")}.md`, result);
+        }
+        function makeInputFollow(ele) {
+            var isEnglish = /[a-zA-Z]*$/;
+            ele.value = ele.value.replace(isEnglish,'').toLowerCase().replace(/ /g,"-");
+            }
+
+        function onlyArabic(ele) {
+            var isArabic = /^[a-zA-Z]*$/;
+
+            ele.value = ele.value.replace(isArabic,'');
+            }
+
+        function validateForm() {
+            var a = document.forms["post-details"]["title-input"].value;
+            var b = document.forms["post-details"]["author-input"].value;
+            var c = document.forms["post-details"]["subject-input"].value;
+            
+            if (a == null || a == "") {
+                alert("خانة العنوان فارغة");
+                return false;
+            }
+
+            if (b == null || b == "") {
+                alert("خانة اسم الكاتب فارغة");
+                return false;
+            }
+
+            if (c == null || c == "") {
+                alert("خانة الموضوع فارغة");
+                return false;
+            }
         }
     </script>
 </div>

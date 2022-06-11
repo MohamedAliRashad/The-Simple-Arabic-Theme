@@ -1,4 +1,4 @@
-$dark-background-color:       #0e0e0e !default;
+$dark-background-color:#0e0e0e !default;
 $dark-text-color: #bbb !default;
 
 html[data-theme="dark"]  {
@@ -159,7 +159,7 @@ html[data-theme="dark"]  {
 
     a:after {
       color: $dark-background-color;
-    }
+    }w
 
     a:hover {
       color: #aaa;
@@ -208,5 +208,47 @@ html[data-theme="dark"]  {
       }
     }
   }
-}
 
+  .EasyMDEContainer {
+    border: 2px solid $dark-text-color;
+    caret-color: rgb(255, 255, 255);
+  }
+  
+  .CodeMirror, .editor-preview {
+    caret-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-color: $dark-text-color;
+    background-color: #2d2d2d;
+  }
+  
+  input[type=text] {
+    color: rgb(255, 255, 255);
+    background-color: #2d2d2d;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid $dark-text-color;
+  }
+
+  button {
+    color: $dark-text-color;
+    background-color: #2d2d2d;
+    border: none;
+    /* border-radius: 45px; */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #2d2d2d;
+    box-shadow: 0px 15px 20px #b31212;
+    color: $dark-text-color;
+    transform: translateY(-10px);
+  }
+  
+  .filter-green {
+    filter: invert(29%) sepia(28%) saturate(3541%) hue-rotate(341deg) brightness(87%) contrast(79%);
+  }
+}
