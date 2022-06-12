@@ -58,7 +58,7 @@ favicon: "/Commit-to-build/assets/images/ramadan.svg" # the favicon for your sit
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 yat:
-  date_format: "%b %d, %Y"
+  date_format: "%-d %b %Y"
 
 # If you want more debug log, you can set true
 # debug: true
@@ -74,40 +74,6 @@ yat:
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
-
-# If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
-
-# Translate languages
-# langs refer to https://cloud.google.com/translate/docs/languages
-# translate_langs:
-#   - lang: en
-#     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
-#     text: English
-
-#   - lang: ar
-#     img: https://cdn.countryflags.com/thumbs/egypt/flag-400.png
-#     text: العربية
-
-#   - lang: fr
-#     img: https://cdn.countryflags.com/thumbs/france/flag-400.png
-#     text: French
-
-#   - lang: zh-CN
-#     img: https://cdn.countryflags.com/thumbs/china/flag-400.png
-#     text: Chinese(Simple)
-
-#   - lang: ja
-#     img: https://cdn.countryflags.com/thumbs/japan/flag-400.png
-#     text: Japanese
-
-#   - lang: ko
-#     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
-#     text: Korean
-
-#   - lang: ru
-#     img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
-#     text: Russian
 
 # You can choose a theme color
 # Default theme colors as below:
@@ -181,8 +147,11 @@ header_pages:
 #   background: "rgba(0, 0, 0, 0.8)"  # Banner background (Could be a image)
 #   height: "640px"         # Banner default height
 #   min_height: null        # Banner minium height
-#   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
-#   subheading_style: null  # Custom subheading style (e.g. color: gold)
+#   background: "#000"
+#   height: "100vh"
+#   min_height: "38vh"
+#   heading_style: "font-family:'Droid Arabic Kufi'; font-size: 40px; font-weight: bold;"
+#   subheading_style: "font-family:'Droid Arabic Kufi'; font-size: 20px; font-weight: bold; color: gold"
 
 # Excerpt size setting
 # excerpt_size: 350

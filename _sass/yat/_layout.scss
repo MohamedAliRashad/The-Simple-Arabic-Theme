@@ -319,7 +319,7 @@ html {
   }
 
   .post-excerpt {
-    color: #777;
+    color: rgb(87, 87, 87);
     word-break: break-word;
     overflow-wrap: break-word;
   }
@@ -652,7 +652,7 @@ html {
     }
 
     .left-vsplit:before {
-      background: #e3e3e388;
+      background: #656565;
     }
 
     .post-tags {
@@ -776,6 +776,6 @@ html {
   width: 1px;
   height: 10px;
   margin: 0 10px;
-  background-color: #e3e3e3e3;
+  background-color: #656565;
   vertical-align: baseline;
 }
