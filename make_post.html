@@ -28,8 +28,6 @@ title: اصنع محتوى
     </form>
     
 
-    <script src="https://cdn.jsdelivr.net/gh/poush/random-animal/dist/random-animal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
     <script>
         const editor = new EasyMDE({ element: document.getElementById('post-maker'), direction: 'rtl', previewImagesInEditor: true, sideBySideFullscreen: false, status: false, toolbar: false, spellChecker: false });
         EasyMDE.toggleSideBySide(editor);
@@ -55,12 +53,8 @@ title: اصنع محتوى
             var c = document.forms["post-details"]["author-input"].value;
             var d = document.forms["post-details"]["subject-input"].value;
             
-            let header = `---\nlayout: post \ntitle: ${a} \nsubheading: ${b} \nauthor: ${c} \ncategories: ${d} \nsidebar: [] \n---\n`
+            let header = `---\nlayout: post \ntitle: ${a} \nsubheading: ${b} \nauthor: ${c} \ncategories: ['${d}'] \nsidebar: [] \n---\n`
             var text = editor.value();
-            
-            // var converter = new Showdown.converter();
-            // var html = converter.makeHtml(text);
-            // result = header.concat(html);
             
             result = header.concat(text);
             let today = new Date().toISOString().slice(0, 10)
