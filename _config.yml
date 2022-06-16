@@ -30,7 +30,7 @@ email: m.rashadnow@gmail.com
 author: محمد رشاد
 
 # theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "MohamedAliRashad/Commit-to-build"
+remote_theme: "MohamedAliRashad/The-Simple-Arabic-Theme"
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -51,9 +51,9 @@ copyright: "ﻷن الهدف من هذا التصميم هو نشر الأفكا
 description: >- # this means to ignore newlines until "baseurl:"
   The personal opinions of Mohamed Rashad in Arabic with some useful technical stuff 
 
-baseurl: "/Commit-to-build" # the subpath of your site, e.g. /blog
+baseurl: "/The-Simple-Arabic-Theme" # the subpath of your site, e.g. /blog
 url: "https://mohamedalirashad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-favicon: "/Commit-to-build/assets/images/ramadan.svg" # the favicon for your site
+favicon: "/The-Simple-Arabic-Theme/assets/images/ramadan.svg" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
