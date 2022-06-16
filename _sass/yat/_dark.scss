@@ -251,4 +251,9 @@ html[data-theme="dark"]  {
   .filter-green {
     filter: invert(29%) sepia(28%) saturate(3541%) hue-rotate(341deg) brightness(87%) contrast(79%);
   }
+  
+  img.site-favicon {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
 }
