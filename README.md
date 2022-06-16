@@ -11,4 +11,4 @@ One of the biggest problems with content creation in the internet is that you ar
 
 2. Run Cloudflared through this command from a new terminal and you are done
    
-       cloudflared tunnel --url http://127.0.0.1:4000/Commit-to-build/
+       cloudflared tunnel --url http://127.0.0.1:4000/The-Simple-Arabic-Theme/
