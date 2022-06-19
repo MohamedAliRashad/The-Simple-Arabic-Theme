@@ -5,7 +5,7 @@
 # Yet another theme for elegant writers with modern flat style and beautiful
 # night/dark mode.
 #
-# Website: https://github.com/jeffreytse/jekyll-theme-yat
+# Website: https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme
 #
 # You can do anything you want, including projects for your clients, as long
 # as you mention an attribution back (credit links in footer or project).
@@ -26,11 +26,10 @@
 
 title: "" # Learn to Build
 email: m.rashadnow@gmail.com
-# author: Mohamed Rashad
 author: محمد رشاد
 
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "MohamedAliRashad/The-Simple-Arabic-Theme"
+# # theme: owner/name --> Don't forget to remove/comment the gem-based theme option
+# remote_theme: "MohamedAliRashad/The-Simple-Arabic-Theme"
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -44,9 +43,7 @@ remote_theme: "MohamedAliRashad/The-Simple-Arabic-Theme"
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-# copyright: "Unpublished Work (cleft) 2017-{currentYear} <a href='https://github.com/MohamedAliRashad'>{author}</a>"
 copyright: "ﻷن الهدف من هذا التصميم هو نشر الأفكار باللغة العربية، فلا يوجد حقوق على المحتوى ويمكنك استخدامه ونشره بأي شكل ممكن."
-# copyright: "قام  <a href='https://github.com/MohamedAliRashad'>{author}</a> بإنشاء هذا التصميم فى وقت فراغه "
 
 description: >- # this means to ignore newlines until "baseurl:"
   A try to provide a good and simple theme for Arabic Content
