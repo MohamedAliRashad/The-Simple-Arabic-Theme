@@ -2,10 +2,10 @@
 
 English | [العربية](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/blob/main/README.AR.md)
 
-# The Simple Arabic Theme
+# The Simple Arabic Theme :waning_crescent_moon:
 My innocent try to make the world a better place for people like me (simple humans who love the Arabic Language) :seedling: 
 
-## How to use ?
+## :sparkles: How to use ?
 1. Make a git repo with your username like this `{username}.github.io`
 1. (optional) Add description and choose if you want your repo to be public or private (it wouldn't affect the hosting of the blog) 
 1. Clone the repo into a folder of your choice using `git clone`
@@ -18,9 +18,9 @@ My innocent try to make the world a better place for people like me (simple huma
     - url from `https://mohamedalirashad.github.io` to the gh-pages url (you should only change the username in the link with the username in step 1)
     - favicon `/The-Simple-Arabic-Theme/assets/images/moon.svg` to `/assets/images/moon.svg` (if you changed the base url to something other than an empty string, you will need to add it in the begging)
 
-And that's it, Just push the changes to your github repo and start building content 🌠
+**And that's it**, Just push the changes to your github repo and start building content :tada:
 
-## How to make a post ?
+## :pencil2: How to make a post ?
 1. Run this command in a terminal opened in the repo
     ```
     bundle exec jekyll serve --livereload
@@ -31,13 +31,13 @@ And that's it, Just push the changes to your github repo and start building cont
 5. Make any last changes into it (you should see the post in the home page of `livereload` page).
 6. Finally, Upload the post using `git add`, `git commit` and `git push` (or just use the sync functionality in vscode)
 
-## Why i made it ?
+## :hand: Why i made it ?
 I am a researcher who enjoys reading and learning new stuff from time to time. what i discovered through my days of learning was the superficiality of understanding i had in topics i though i know well.
 The event that opened my eyes and let me know how much of a fool i am was when i translated a famous word i thought i understand very well into Arabic and thought about for some time to discover that i reached new levels of understanding i haven't reached before. All of this, just because i translated it into my mother tongue and gave myself some time to understand.
 
 After this incident, i started to translate everything into Arabic and read it again to not just understand the idea presented to me but also the phalisophy behind it. And the journey so fat was amazing that's why i wanted to do this project for some time. I want others like me to learn and understand through content written in their mother tongue and to write themselves their ideas and theories about stuff in the world. 
 
-## Wants to contribute ?
+## :construction_worker: Wants to contribute ?
 
 **Note**: All Pull Requests is to be merged with the `dev` branch not the `main` branch.
 
