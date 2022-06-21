@@ -35,10 +35,10 @@ My innocent try to make the world a better place for people like me (simple huma
 I am a researcher who enjoys reading and learning new stuff from time to time. what i discovered through my days of learning was the superficiality of understanding i had in topics i though i know well.
 The event that opened my eyes and let me know how much of a fool i am was when i translated a famous word i thought i understand very well into Arabic and thought about for some time to discover that i reached new levels of understanding i haven't reached before. All of this, just because i translated it into my mother tongue and gave myself some time to understand.
 
-After this incident, i started to translate everything into Arabic and read it again to not just understand the idea presented to me but also the phalisophy behind it. And the journey so fat was amazing that's why i wanted to do this project for some time. I want others like me to learn and understand through content written in their mother tongue and to write themselves their ideas and theories about stuff in the world. 
+After this incident, i started to translate everything into Arabic and read it again to not just understand the idea presented to me but also the philosophy behind it. And the journey so fat was amazing that's why i wanted to do this project for some time. I want others like me to learn and understand through content written in their mother tongue and to write themselves their ideas and theories about stuff in the world. 
 
 ## :construction_worker: Wants to contribute ?
 
 **Note**: All Pull Requests is to be merged with the `dev` branch not the `main` branch.
 
-I will make a series of videos explaning the project in Arabic for the enthuisasts who want  to help, **Stay Tuned** ...
+I will make a series of videos explaining the project in Arabic for the enthusiasts who want  to help, **Stay Tuned** ...
