@@ -3,7 +3,7 @@
 English | [العربية](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/blob/main/README.AR.md)
 
 # The Simple Arabic Theme :waning_crescent_moon:
-My innocent try to make the world a better place for people like me (simple humans who love the Arabic Language) :seedling: 
+My innocent try to make the world a better place for people like me (simple humans who love the **Arabic Language**) :seedling: 
 
 ## :sparkles: How to use ?
 1. Make a git repo with your username like this `{username}.github.io`
@@ -32,10 +32,12 @@ My innocent try to make the world a better place for people like me (simple huma
 6. Finally, Upload the post using `git add`, `git commit` and `git push` (or just use the sync functionality in vscode)
 
 ## :hand: Why i made it ?
-I am a researcher who enjoys reading and learning new stuff from time to time. what i discovered through my days of learning was the superficiality of understanding i had in topics i though i know well.
-The event that opened my eyes and let me know how much of a fool i am was when i translated a famous word i thought i understand very well into Arabic and thought about for some time to discover that i reached new levels of understanding i haven't reached before. All of this, just because i translated it into my mother tongue and gave myself some time to understand.
 
-After this incident, i started to translate everything into Arabic and read it again to not just understand the idea presented to me but also the philosophy behind it. And the journey so fat was amazing that's why i wanted to do this project for some time. I want others like me to learn and understand through content written in their mother tongue and to write themselves their ideas and theories about stuff in the world. 
+I <b>a</b>m a <b>research</b>er <b>wh</b>o <b>enjo</b>ys <b>readi</b>ng <b>an</b>d <b>learni</b>ng <b>ne</b>w <b>stu</b>ff <b>fro</b>m <b>tim</b>e <b>t</b>o <b>tim</b>e. <b>wha</b>t i <b>discover</b>ed <b>throu</b>gh <b>m</b>y <b>day</b>s <b>o</b>f <b>learni</b>ng <b>wa</b>s <b>th</b>e <b>superficial</b>ity <b>o</b>f <b>understand</b>ing i <b>ha</b>d <b>i</b>n <b>topi</b>cs i <b>thou</b>gh i <b>kno</b>w <b>wel</b>l.
+
+<b>Th</b>e <b>eve</b>nt <b>tha</b>t <b>open</b>ed <b>m</b>y <b>eye</b>s <b>an</b>d <b>le</b>t <b>m</b>e <b>kno</b>w <b>ho</b>w <b>muc</b>h <b>o</b>f a <b>foo</b>l i <b>a</b>m <b>wa</b>s <b>whe</b>n i <b>translat</b>ed a <b>famo</b>us <b>wor</b>d i <b>thoug</b>ht i <b>understa</b>nd <b>ver</b>y <b>wel</b>l <b>int</b>o <b>Arab</b>ic <b>an</b>d <b>thoug</b>ht <b>abo</b>ut <b>fo</b>r <b>som</b>e <b>tim</b>e <b>t</b>o <b>discov</b>er <b>tha</b>t i <b>reach</b>ed <b>ne</b>w <b>leve</b>ls <b>o</b>f <b>understand</b>ing i <b>hav</b>en't <b>reach</b>ed <b>befo</b>re. <b>Al</b>l <b>o</b>f <b>thi</b>s, <b>jus</b>t <b>becau</b>se i <b>translat</b>ed <b>i</b>t <b>int</b>o <b>m</b>y <b>moth</b>er <b>tong</b>ue <b>an</b>d <b>gav</b>e <b>myse</b>lf <b>som</b>e <b>tim</b>e <b>t</b>o <b>understa</b>nd.
+
+<b>Aft</b>er <b>thi</b>s <b>incide</b>nt, i <b>start</b>ed <b>t</b>o <b>transla</b>te <b>everythi</b>ng <b>int</b>o <b>Arab</b>ic <b>an</b>d <b>rea</b>d <b>i</b>t <b>aga</b>in <b>t</b>o <b>no</b>t <b>jus</b>t <b>understa</b>nd <b>th</b>e <b>ide</b>a <b>present</b>ed <b>t</b>o <b>m</b>e <b>bu</b>t <b>als</b>o <b>th</b>e <b>philosop</b>hy <b>behi</b>nd <b>i</b>t. <b>An</b>d <b>th</b>e <b>journ</b>ey <b>s</b>o <b>fa</b>t <b>wa</b>s <b>amazi</b>ng <b>tha</b>t's <b>wh</b>y i <b>want</b>ed <b>t</b>o <b>d</b>o <b>thi</b>s <b>proje</b>ct <b>fo</b>r <b>som</b>e <b>tim</b>e. I <b>wan</b>t <b>othe</b>rs <b>lik</b>e <b>m</b>e <b>t</b>o <b>lea</b>rn <b>an</b>d <b>understa</b>nd <b>throu</b>gh <b>conte</b>nt <b>writt</b>en <b>i</b>n <b>the</b>ir <b>moth</b>er <b>tong</b>ue <b>an</b>d <b>t</b>o <b>wri</b>te <b>themselv</b>es <b>the</b>ir <b>ide</b>as <b>an</b>d <b>theori</b>es <b>abo</b>ut <b>stu</b>ff <b>i</b>n <b>th</b>e <b>wor</b>ld. 
 
 ## :construction_worker: Wants to contribute ?
 
