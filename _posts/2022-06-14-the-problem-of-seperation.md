@@ -5,7 +5,7 @@ subheading: مواقع التواصل الأجتماعى كمثال
 author: محمد رشاد 
 categories: ['أفكار بسيطة']
 banner:
-  image: "assets/images/banners/3.jpg"
+  image: "assets/images/banners/3.webp"
   opacity: 0.618
   background: "#000"
   height: "100vh"
