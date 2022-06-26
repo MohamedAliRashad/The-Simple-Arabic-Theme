@@ -1,5 +1,8 @@
 ![project-demo](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/blob/main/assets/project-demo.gif)
 
+
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=fAVbuk-5PCI)
+
 English | [العربية](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/blob/main/README.AR.md)
 
 # The Simple Arabic Theme :waning_crescent_moon:
@@ -29,6 +32,11 @@ My innocent try to make the world a better place for people like me (simple huma
 4. After finishing, Just download the post (using the `تفريغ` button) to the `_posts` folder
 5. Make any last changes into it (you should see the post in the home page of `livereload` page).
 6. Finally, Upload the post using `git add`, `git commit` and `git push` (or just use the sync functionality in vscode)
+
+## :bulb: Awesome Blogs
+**Note**: if you wish to add your blog to the list just open an **issue** :cat:
+1. [Mohamed Rashad](https://github.com/MohamedAliRashad/mohamedalirashad.github.io)
+
 
 ## :hand: Why i made it ?
 
