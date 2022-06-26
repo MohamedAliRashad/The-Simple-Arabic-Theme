@@ -6,8 +6,7 @@ English | [العربية](https://github.com/MohamedAliRashad/The-Simple-Arabic
 My innocent try to make the world a better place for people like me (simple humans who love the **Arabic Language**) :seedling: 
 
 ## :sparkles: How to use ?
-1. Make a git repo with your username like this `{username}.github.io`
-1. (optional) Add description and choose if you want your repo to be public or private (it wouldn't affect the hosting of the blog) 
+1. Make a git repo with your username like this `{username}.github.io` (Do not add description or `.gitignore` or any files in the repo).
 1. Clone the repo into a folder of your choice using `git clone`
 1. Open a command line inside the repo folder
 1. Add remote `upstream` using the following command `git remote add upstream git@github.com:MohamedAliRashad/The-Simple-Arabic-Theme.git`
