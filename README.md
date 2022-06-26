@@ -1,7 +1,7 @@
 ![project-demo](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/blob/main/assets/project-demo.gif)
 
 
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=fAVbuk-5PCI)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=fAVbuk-5PCI) ![Issue Tracking](	https://img.shields.io/github/issues/MohamedAliRashad/The-Simple-Arabic-Theme?style=for-the-badge&logo=appveyor)
 
 English | [العربية](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/blob/main/README.AR.md)
 
