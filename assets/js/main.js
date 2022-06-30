@@ -86,11 +86,6 @@ function replaceDate(element) {
   element.innerHTML = element.innerHTML.replace(/\d(?=[^<>]*(<|$))/g, function ($0) { return map[$0] });
 }
 
-function replaceDigits (element) {
-  var map = ["&\#1632;", "&\#1633;", "&\#1634;", "&\#1635;", "&\#1636;", "&\#1637;", "&\#1638;", "&\#1639;", "&\#1640;", "&\#1641;"];
-  // var map = ["&\#1776;", "&\#1777;", "&\#1778;", "&\#1779;", "&\#1780;", "&\#1781;", "&\#1782;", "&\#1783;", "&\#1784;", "&\#1785;"]
-  element.innerHTML = element.innerHTML.replace(/\d(?=[^<>]*(<|$))/g, function ($0) { return map[$0] });
-}
 
 document.addEventListener("DOMContentLoaded", function(){
   var elements = document.querySelectorAll(".post-meta,.segment-name,.date_span,.items, .post-date");;
