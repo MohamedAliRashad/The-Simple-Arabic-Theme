@@ -27,7 +27,6 @@ title: اصنع محتوى
         </div>
     </form>
     
-
     <script>
         const editor = new EasyMDE({ element: document.getElementById('post-maker'), direction: 'rtl', previewImagesInEditor: true, sideBySideFullscreen: false, status: false, toolbar: false, spellChecker: false });
         EasyMDE.toggleSideBySide(editor);
@@ -45,8 +44,25 @@ title: اصنع محتوى
             document.body.removeChild(element);
             }
 
+        function reset() {
+
+            document.forms["post-details"]["title-input"].value = "";
+            localStorage.setItem("title-data", "");
+            document.forms["post-details"]["subheader-input"].value = "";
+            localStorage.setItem("subheader-data", "");
+            document.forms["post-details"]["author-input"].value = "";
+            localStorage.setItem("author-data", "");
+            document.forms["post-details"]["subject-input"].value = "";
+            localStorage.setItem("subject-data", "");
+
+            editor.value("");
+            localStorage.setItem("editor-data", "");
+        }
+
         function doDL() {
-            validateForm()
+            if (validateForm() == false) {
+                return false
+            }
 
             var a = document.forms["post-details"]["title-input"].value;
             var b = document.forms["post-details"]["subheader-input"].value;
@@ -58,20 +74,16 @@ title: اصنع محتوى
             
             result = header.concat(text);
             let today = new Date().toISOString().slice(0, 10)
-            // let name = document.getElementById("title-input").value;
             let name = randomAnimal() 
             download(`${today}-${name.toLowerCase().replace(/ /g,"-")}.md`, result);
+            reset();
         }
-        function makeInputFollow(ele) {
-            var isEnglish = /[a-zA-Z]*$/;
-            ele.value = ele.value.replace(isEnglish,'').toLowerCase().replace(/ /g,"-");
-            }
 
         function onlyArabic(ele) {
-            var isArabic = /^[a-zA-Z]*$/;
+            var isArabic = /[a-zA-Z]*$/;
 
             ele.value = ele.value.replace(isArabic,'');
-            }
+        }
 
         function validateForm() {
             var a = document.forms["post-details"]["title-input"].value;
@@ -94,4 +106,40 @@ title: اصنع محتوى
             }
         }
     </script>
+
+
+{% if site.editor_cache == true %}
+<script>
+    var data;
+    window.onload = function() {
+        editor.value(localStorage.getItem('editor-data'));
+        document.forms["post-details"]["title-input"].value = localStorage.getItem('title-data');
+        document.forms["post-details"]["subheader-input"].value = localStorage.getItem('subheader-data');
+        document.forms["post-details"]["author-input"].value = localStorage.getItem('author-data');
+        document.forms["post-details"]["subject-input"].value = localStorage.getItem('subject-data');
+    }
+
+    editor.codemirror.on("change", () => {
+    localStorage.setItem("editor-data", editor.value());
+    });
+
+    document.forms["post-details"]["title-input"].addEventListener('change', function (evt) {
+    onlyArabic(this)
+    localStorage.setItem("title-data", this.value);
+    });
+    document.forms["post-details"]["subheader-input"].addEventListener('input', function (evt) {
+    onlyArabic(this)
+    localStorage.setItem("subheader-data", this.value);
+    });
+    document.forms["post-details"]["author-input"].addEventListener('input', function (evt) {
+    onlyArabic(this)
+    localStorage.setItem("author-data", this.value);
+    });
+    document.forms["post-details"]["subject-input"].addEventListener('input', function (evt) {
+    onlyArabic(this)
+    localStorage.setItem("subject-data", this.value);
+    });
+
+</script>
+{% endif %}
 </div>

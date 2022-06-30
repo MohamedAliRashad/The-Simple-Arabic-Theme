@@ -66,8 +66,8 @@ yat:
 # If you want to change the content width, you can set to another value
 # content_width: "920px"
 
-# Google analytics
-# google_analytics: [Tracking ID]
+# If you don't want to enable caching in the text editor, change this to false
+editor_cache: true
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
