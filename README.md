@@ -22,6 +22,8 @@ My innocent try to make the world a better place for people like me (simple huma
 
 **And that's it**, Just push the changes to your github repo and start building content :tada:
 
+**Update**: you can watch an Arabic tutorial of the process from the [YouTube](https://www.youtube.com/watch?v=fAVbuk-5PCI) button above.
+
 ## :pencil2: How to make a post ?
 1. Run this command in a terminal opened in the repo
     ```
