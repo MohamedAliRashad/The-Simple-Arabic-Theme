@@ -64,10 +64,13 @@ yat:
 # header_transparent: true
 
 # If you want to change the content width, you can set to another value
-# content_width: "920px"
+content_width: "920px"
 
 # If you don't want to enable caching in the text editor, change this to false
 editor_cache: true
+
+# If you don't want reactions on your post, change this to false
+like_btn: true
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false

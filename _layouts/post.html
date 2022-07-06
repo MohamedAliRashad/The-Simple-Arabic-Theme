@@ -8,6 +8,7 @@ sidebar:
 ---
 
 <div class="post">
+  
   <section>
 
     {%- assign name = 'banner' -%}
@@ -24,7 +25,15 @@ sidebar:
     {%- endif -%}
 
     {%- include views/article.html -%}
+
+    {% if site.like_btn %}
+    <center>
+      <span class="likebtn-wrapper" data-theme="bootstrap" data-lang="ar" data-ef_voting="push" data-white_label="true" data-show_like_label="false" data-popup_disabled="true" data-loader_show="true" data-tooltip_enabled="false" data-rtl="true"></span>
+      <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+    </center>
+    {% endif %}
     
+    <br>
     {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
     {%- if result.size == 0 -%}
     <div class="post-related" style="font-family:'Droid Arabic Kufi';">
