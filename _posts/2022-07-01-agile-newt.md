@@ -4,6 +4,7 @@ title: أهمية الكتابة باللغة العربية
 subheading: اللغة ورؤية الكون 
 author: محمد رشاد 
 categories: ['أفكار بسيطة'] 
+description: أهمية الحفاظ على التراث والهوية العربية داخل مجتمعنا عن طريق نشر الكتابة والتحدث باللغة العربية
 banner:
   image: "assets/images/banners/4.webp"
   opacity: 0.618
