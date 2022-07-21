@@ -7,22 +7,22 @@ title: اصنع محتوى
     <textarea id="post-maker" placeholder="اصنع محتواك"></textarea>
     <br>
     <form id="post-details">
-        <label for="title" class="post">عنوان:</label>
+        <label for="title-input" class="post">عنوان:</label>
         <input type="text" id="title-input" oninput="onlyArabic(this)"><br>
         
-        <label for="subheader" class="post">عنوان فرعى:</label>
+        <label for="subheader-input" class="post">عنوان فرعى:</label>
         <input type="text" id="subheader-input" oninput="onlyArabic(this)"><br>
         
-        <label for="author" class="post">اسم الكاتب:</label>
+        <label for="author-input" class="post">اسم الكاتب:</label>
         <input type="text" id="author-input" oninput="onlyArabic(this)"><br>
         
-        <label for="subject" class="post">موضوع المقالة:</label>
+        <label for="subject-input" class="post">موضوع المقالة:</label>
         <input type="text" id="subject-input" oninput="onlyArabic(this)"><br>
         
         <br>
         <div style="text-align:center;">
-            <button class="btn" onclick='doDL()''>
-                <img src="assets/images/download_button.svg" class="filter-green">
+            <button class="btn" onclick="doDL()">
+                <img src="assets/images/download_button.svg" class="filter-green" alt="download_button">
             </button>
         </div>
     </form>
