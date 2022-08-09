@@ -13,7 +13,7 @@ banner:
   min_height: "38vh"
   heading_style: "font-family:'Droid Arabic Kufi'; font-size: 40px; font-weight: bold;"
   subheading_style: "font-family:'Droid Arabic Kufi'; font-size: 20px; font-weight: bold; color: gold" 
-sidebar: [] 
+# sidebar: []
 ---
 
 <iframe width="80%" height="400" src="https://www.youtube.com/embed/RKK7wGAYP6k" frameborder="0" alt="رؤية العالم من نظارات اللغة"></iframe>
