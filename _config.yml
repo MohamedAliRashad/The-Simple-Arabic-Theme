@@ -64,7 +64,7 @@ yat:
 # header_transparent: true
 
 # If you want to change the content width, you can set to another value
-content_width: "920px"
+content_width: "1080px"
 
 # If you don't want to enable caching in the text editor, change this to false
 editor_cache: true
