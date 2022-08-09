@@ -191,11 +191,11 @@ html[data-theme="dark"]  {
 
     .post-menu-content {
       ul {
-        border-left: 1px solid #787878;
+        border-right: 3px solid #db1b1b;
 
         .active {
           background-color: #2d2d2d;
-          border-left: 2px solid #aaa;
+          border-right: 2px solid #aaa;
         }
 
         a {

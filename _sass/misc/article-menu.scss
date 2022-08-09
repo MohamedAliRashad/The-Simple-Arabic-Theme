@@ -3,7 +3,7 @@
  */
 
 .post-menu {
-  padding-left: 20px;
+  padding-right: 0px;
   min-width: 200px;
   max-width: 230px;
 
@@ -16,9 +16,12 @@
 
   .post-menu-content {
     ul {
-      border-left: 1px solid #e9ecef;
+      border-right: 3px solid #5b9ddf;
       $indent: $base-font-size / 4;
       $active-bgcolor: #ecebec;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
 
       @for $i from 2 to 7 {
         .h-h#{$i} {
@@ -46,8 +49,8 @@
       .active {
         background-color: $active-bgcolor;
         transition: background 0.5s;
-        border-left: 2px solid #202020;
-        margin-left: -2px;
+        border-right: 2px solid #202020;
+        margin-right: -2px;
 
         &:hover {
           background-color: lighten($active-bgcolor, 2%);
