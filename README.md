@@ -23,8 +23,7 @@ My innocent try to make the world a better place for people like me (simple huma
 **And that's it**, Just push the changes to your github repo and start building content :tada:
 
 ## :newspaper: News
-- :lemon: **Muharram 2, 1444** - Added Like and Dislike functionality for posts
-- :lemon: **Zul Qi'dah 27, 1443** -  you can watch an Arabic tutorial of the process from the [YouTube](https://www.youtube.com/watch?v=fAVbuk-5PCI) button above.
+News has moved to [Here](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/wiki/News) (To make the README static from here on out).
 
 ## :pencil2: How to make a post ?
 1. Run this command in a terminal opened in the repo
@@ -38,9 +37,7 @@ My innocent try to make the world a better place for people like me (simple huma
 6. Finally, Upload the post using `git add`, `git commit` and `git push` (or just use the sync functionality in vscode)
 
 ## :bulb: Awesome Blogs
-**Note**: if you wish to add your blog to the list just open an **issue** :cat:
-1. [Mohamed Rashad](https://github.com/MohamedAliRashad/mohamedalirashad.github.io)
-
+Awesome Blogs has moved to [Here](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/wiki/Awesome-Blogs) (To make the README static from here on out).
 
 ## :hand: Why i made it ?
 
@@ -52,6 +49,4 @@ I <b>a</b>m a <b>research</b>er <b>wh</b>o <b>enjo</b>ys <b>readi</b>ng <b>an</b
 
 ## :construction_worker: Wants to contribute ?
 
-**Note**: All Pull Requests is to be merged with the `dev` branch not the `main` branch.
-
-I will make a series of videos explaining the project in Arabic for the enthusiasts who want  to help, **Stay Tuned** ...
+Contribution tutorials has moved to [Here](https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme/wiki/How-to-contribute-%3F) (To make the README static from here on out).
