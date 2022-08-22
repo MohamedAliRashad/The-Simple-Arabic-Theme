@@ -5,6 +5,9 @@ title: اصنع محتوى
 
 <div style="font-family:'Droid Arabic Kufi';">
 
+    <input type="file" onchange="previewImage(this)"><br>
+    <img id="preview-image" src="" height="100vh" alt="Image preview">
+
     <textarea id="post-maker" placeholder="اصنع محتواك"></textarea>
     <br>
     <form id="post-details">
@@ -30,6 +33,35 @@ title: اصنع محتوى
 
     <script>
         const editor = new EasyMDE({ element: document.getElementById('post-maker'), direction: 'rtl', previewImagesInEditor: true, sideBySideFullscreen: false, status: false, toolbar: false, spellChecker: false });
+        function previewImage(element) {
+            const preview = document.getElementById('preview-image');
+            const file = element.files[0];
+            const reader = new FileReader();
+
+            reader.addEventListener("load", function () {
+                // convert image file to base64 string
+                preview.src = reader.result;
+                console.log(preview.src);
+            }, false);
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function previewFile() {
+            const file = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+
+            reader.addEventListener("load", function () {
+                // convert image file to base64 string
+                preview.src = reader.result;
+            }, false);
+
+            if (file) {
+                reader.readAsText(this.files[0]);
+            }
+        }
 
         function download(filename, text) {
             var element = document.createElement('a');
