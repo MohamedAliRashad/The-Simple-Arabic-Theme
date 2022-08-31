@@ -1,7 +1,7 @@
 /**
  * Animation for transparent header
  */
-html {
+ html {
   &[data-header-transparent] {
     header.site-header {
       position: fixed;
@@ -417,6 +417,7 @@ html {
 
     h2 {
       @include relative-font-size(2);
+      font-family: "Droid Arabic Naskh";
 
       @include media-query($on-laptop) {
         @include relative-font-size(1.75);
@@ -425,6 +426,7 @@ html {
 
     h3 {
       @include relative-font-size(1.625);
+      font-family: "Amiri";
 
       @include media-query($on-laptop) {
         @include relative-font-size(1.375);
