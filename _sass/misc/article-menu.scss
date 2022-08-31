@@ -12,9 +12,12 @@
     margin-bottom: 14px;
     font-weight: 600;
     color: #222;
+    font-family: 'Amiri';
   }
 
   .post-menu-content {
+    font-family: 'Droid Arabic Naskh';
+
     ul {
       border-right: 3px solid #5b9ddf;
       $indent: $base-font-size / 4;
@@ -42,7 +45,7 @@
 
         &:hover {
           text-decoration: none;
-          color: lighten($text-color, 20%)!important;
+          color: lighten($text-color, 20%) !important;
         }
       }
 

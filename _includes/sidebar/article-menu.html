@@ -1,20 +1,20 @@
 <style type="text/css" media="screen">
-.post-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  .post-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 </style>
 
 <div class="post-menu">
-  <div class="post-menu-title" style="font-family:'Droid Arabic Kufi';">محتويات المدونة</div>
-  <div class="post-menu-content" style="font-family:'Droid Arabic Kufi';"></div>
+  <div class="post-menu-title">محتويات المدونة</div>
+  <div class=" post-menu-content"></div>
 </div>
 
 <script>
   function generateContent() {
     var menu = document.querySelector(".post-menu");
-    var menuContent =  menu.querySelector(".post-menu-content");
+    var menuContent = menu.querySelector(".post-menu-content");
     var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
 
     // Hide menu when no headings
@@ -69,7 +69,7 @@
       for (var i = beginIndex + 1; i < endIndex; i++) {
         item = items[i]
         // if (!item.classList.contains('h-h2')) {
-          item.style.display = '';
+        item.style.display = '';
         // }
       }
       for (var i = endIndex; i < items.length; i++) {
@@ -97,7 +97,7 @@
         var headerHeight = headerTop + headerHeight + 20;
         if (headingRect.top <= headerHeight) {
           var id = 'h-' + h.getAttribute('id');
-          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var a = menuContent.querySelector('a[href="#' + id + '"]');
           var curActive = a.parentNode;
           if (curActive) {
             curActive.classList.add('active');
