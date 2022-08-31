@@ -76,7 +76,7 @@ like_btn: true
 locale: "ar_EG"
 
 # Splitting the markdown editor in half for editing and previewing or not
-split_editor: false
+split_editor: true
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
