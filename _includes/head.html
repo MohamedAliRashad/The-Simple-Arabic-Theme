@@ -1,13 +1,14 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta content="{{ site.title }}" property="og:site_name">
-  {% if page.title %}
+  {% if page.title and page.layout == "post" %}
+  <title>{{ page.title }}</title>
   <meta content="{{ page.title }}" property="og:title">
   <meta content="article" property="og:type">
   {% else %}
-  <meta content="{{ site.title }}" property="og:title">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta content="{{ page.title }} - {{ site.title }}" property="og:title">
   <meta content="website" property="og:type">
   {% endif %}
   {% if page.subheading %}
