@@ -2,7 +2,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {%- seo -%}
+  <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">
+  <meta content="article" property="og:type">
+  {% else %}
+  <meta content="{{ site.title }}" property="og:title">
+  <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.subheading %}
+  <meta content="{{ page.subheading }}" property="og:description">
+  {% else %}
+  <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  {% if page.url %}
+  <meta content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" property="og:url">
+  {% endif %}
+  {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ site.url }}/about/" property="article:author">
+  {% endif %}
+  {% if page.banner.image %}
+  <meta content="{{ site.url }}{{ page.banner.image }}" property="og:image">
+  {% else %}
+  <meta content="{{ site.url }}/assets/images/logo.png" property="og:image">
+  {% endif %}
+  {% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+  {% endfor %}
+  {% endif %}
+
   <link rel="shortcut icon" href="{{ site.favicon }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
@@ -15,7 +45,7 @@
     @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
     @import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
   </style>
-  
+
   <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
   <script src="https://kit.fontawesome.com/ef100c686f.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/gh/poush/random-animal/dist/random-animal.min.js"></script>
