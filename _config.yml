@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "" # Learn to Build
+title: "ثيمة البسطاء" # Learn to Build
 email: m.rashadnow@gmail.com
 author: محمد رشاد
 
