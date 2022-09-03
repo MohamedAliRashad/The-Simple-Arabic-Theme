@@ -6,17 +6,16 @@
   padding-right: 0px;
   min-width: 200px;
   max-width: 230px;
+  font-family: 'Droid Arabic Naskh';
 
   .post-menu-title {
     font-size: $base-font-size * 1.5;
     margin-bottom: 14px;
     font-weight: 600;
     color: #222;
-    font-family: 'Amiri';
   }
 
   .post-menu-content {
-    font-family: 'Droid Arabic Naskh';
 
     ul {
       border-right: 3px solid #5b9ddf;
