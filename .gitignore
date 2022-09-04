@@ -5,4 +5,3 @@ _site
 Gemfile.lock
 dummy
 *.json
-_posts
