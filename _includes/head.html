@@ -1,6 +1,8 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- seo information -->
   <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title and page.layout == "post" %}
   <title>{{ page.title }}</title>
@@ -33,6 +35,7 @@
   <meta content="{{ category }}" property="article:section">
   {% endfor %}
   {% endif %}
+  <!-- end seo -->
 
   <link rel="shortcut icon" href="{{ site.favicon }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
