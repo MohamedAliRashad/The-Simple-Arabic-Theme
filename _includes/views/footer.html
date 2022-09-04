@@ -1,21 +1,29 @@
-<footer class="site-footer h-card" dir="rtl">
-  
-  <div class="wrapper" style="font-family:'Droid Arabic Kufi';">
+<footer class="site-footer h-card">
+
+  <div class="wrapper">
     <div class="site-footer-inner">
       {%- assign currentYear = 'now' | date: "%Y" -%}
       {%- assign copyright = site.copyright
-      | replace: '{currentYear}', currentYear
-      | replace: '{author}', site.author
-      | replace: '(c)', '&copy;'
-      | replace: '(p)', '℗'
-      | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
-      -%}
-      <div>{{ copyright }}</div>
-      <div>قام هذا التصميم على أكتاف <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="http://jekyllrb.com/">جايكل </a> و <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">ثيمة Yat</a> ومجهود هذا <a title="Yat, yet
-      another theme." href="https://github.com/MohamedAliRashad">الانسان البسيط </a>.
-    </div>
-    </div>
+        | replace: '{currentYear}', currentYear
+        | replace: '{author}', site.author
+        | replace: '(c)', '&copy;'
+        | replace: '(p)', '℗'
+        | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
+        -%}
+        <div>{{ copyright }}</div>
+        <div>قام هذا التصميم على أكتاف <a title="Jekyll is a simple, blog-aware, static site
+          generator." href="http://jekyllrb.com/">جايكل </a> و <a title="Yat, yet
+          another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">ثيمة Yat</a> ومجهود هذا <a title="Yat, yet
+          another theme." href="https://github.com/MohamedAliRashad">الانسان البسيط </a>.
+          <br>
+          <br>
+          <div style="color:black; font-weight: bold;">
+            إذا اردت المشاركة فى التطوير تستطيع ان تفعل ذلك من هنا
+            <a target="_blank" href="https://github.com/MohamedAliRashad/The-Simple-Arabic-Theme">
+              <img class="form__icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjYgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAyIDMuNDM4IDkuOCA4LjIwNyAxMS4zODcuNTk5LjExMS43OTMtLjI2MS43OTMtLjU3N3YtMi4yMzRjLTMuMzM4LjcyNi00LjAzMy0xLjQxNi00LjAzMy0xLjQxNi0uNTQ2LTEuMzg3LTEuMzMzLTEuNzU2LTEuMzMzLTEuNzU2LTEuMDg5LS43NDUuMDgzLS43MjkuMDgzLS43MjkgMS4yMDUuMDg0IDEuODM5IDEuMjM3IDEuODM5IDEuMjM3IDEuMDcgMS44MzQgMi44MDcgMS4zMDQgMy40OTIuOTk3LjEwNy0uNzc1LjQxOC0xLjMwNS43NjItMS42MDQtMi42NjUtLjMwNS01LjQ2Ny0xLjMzNC01LjQ2Ny01LjkzMSAwLTEuMzExLjQ2OS0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNS0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yMy45NTctLjI2NiAxLjk4My0uMzk5IDMuMDAzLS40MDQgMS4wMi4wMDUgMi4wNDcuMTM4IDMuMDA2LjQwNCAyLjI5MS0xLjU1MiAzLjI5Ny0xLjIzIDMuMjk3LTEuMjMuNjUzIDEuNjUzLjI0MiAyLjg3NC4xMTggMy4xNzYuNzcuODQgMS4yMzUgMS45MTEgMS4yMzUgMy4yMjEgMCA0LjYwOS0yLjgwNyA1LjYyNC01LjQ3OSA1LjkyMS40My4zNzIuODIzIDEuMTAyLjgyMyAyLjIyMnYzLjI5M2MwIC4zMTkuMTkyLjY5NC44MDEuNTc2IDQuNzY1LTEuNTg5IDguMTk5LTYuMDg2IDguMTk5LTExLjM4NiAwLTYuNjI3LTUuMzczLTEyLTEyLTEyeiIvPjwvc3ZnPg==">
+            </a>
+          </div>
+        </div>
+      </div>
   </div>
 </footer>
