@@ -1,7 +1,7 @@
 /**
  * Animation for transparent header
  */
- html {
+html {
   &[data-header-transparent] {
     header.site-header {
       position: fixed;
@@ -273,6 +273,8 @@
  * Pagination page
  */
 .pagination {
+  font-family: "Droid Arabic Kufi";
+
   .post-list {
     margin-left: 0;
     list-style: none;
@@ -609,6 +611,9 @@
   height: $banner-height;
   background-color: $banner-background;
   transition: height 0.2s;
+  font-family: "Droid Arabic Kufi";
+  font-size: 16px;
+  font-weight: bold;
 
   .page-banner-img {
     position: absolute;
@@ -687,7 +692,11 @@
     }
 
     .left-vsplit:before {
-      background: #656565;
+      width: 2px;
+      height: 15px;
+      margin: 0 10px;
+      vertical-align: baseline;
+      background: #c9c9c9;
     }
 
     .post-tags {
@@ -746,6 +755,7 @@
  * Segments page
  */
 .page-segments {
+
   .page-segments-list {
     margin-left: 0;
     list-style: none;
@@ -808,8 +818,8 @@
 .left-vsplit:before {
   content: "";
   display: inline-block;
-  width: 1px;
-  height: 10px;
+  width: 2px;
+  height: 15px;
   margin: 0 10px;
   background-color: #656565;
   vertical-align: baseline;
