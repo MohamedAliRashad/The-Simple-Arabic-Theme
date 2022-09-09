@@ -43,11 +43,15 @@
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
 
   <style>
+    {% for font in site.fonts %}
+      @import url('https://fonts.googleapis.com/css?family={{ font }}');
+    {% endfor %}
+  </style>
+
+  <style>
     @import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
     @import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
     @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
-    @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
-    @import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
   </style>
 
   <script src="{{ 'assets/js/main.js' | relative_url }}"></script>

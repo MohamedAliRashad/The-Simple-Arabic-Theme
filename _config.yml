@@ -78,8 +78,13 @@ locale: "ar_EG"
 # Splitting the markdown editor in half for editing and previewing or not
 split_editor: true
 
-# If you want to generate website sitemap, you can set true
-# sitemap: false
+# Fonts that are supported (can be extended by copying the font names wanted from there https://fonts.google.com/?subset=arabic)
+fonts:
+  - Tajawal
+  - Cairo
+  - Noto Kufi Arabic
+  - Almarai
+  - El Messiri
 
 # You can choose a theme color
 # Default theme colors as below:
