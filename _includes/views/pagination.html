@@ -26,10 +26,28 @@
         </a>
       </h2>
       <div class="post-meta">
-        <span class="post-date" style="font-family:'Droid Arabic Kufi';"><i class="fa-solid fa-calendar-days"></i> {{ post.date | date: date_format }}</span>
-        <span class="left-vsplit" style="font-family:'Droid Arabic Kufi';"><i class="fa-solid fa-feather-pointed"></i> {{ heading | default: post.author | escape }}</span>
+        {% assign archives_url = '/archives.html' | relative_url %}
+        <span class="post-date"><i class="fa-solid fa-calendar-days" style="color: rgb(0, 197, 0);"></i> <a href="{{ archives_url }}">{{- post.date | date: date_format -}}</a></span>
+        {% assign about_url = '/about.html' | relative_url %}
+        <span class="left-vsplit"><i class="fa-solid fa-feather-pointed" style="color: gold;"></i> <a href="{{ about_url }}">{{- heading | default: post.author | escape -}}</a></span>
+        <span class="left-vsplit">
+          {% if post.categories.size > 1 %}
+            <i class="fa-solid fa-tags" style="color: blue;"></i> 
+          {% else %} 
+           <i class="fa-solid fa-tag" style="color: blue;"></i> 
+          {% endif %}
+          {% assign categories_url = '/categories.html' | relative_url %}
+          {% for category in post.categories %}
+            <a href="{{ categories_url }}#{{ category }}">
+              {{- heading | default: category | escape -}}
+            </a>
+            {% if category !=  post.categories[-1] %}
+              <span style="font-weight: bold;">و</span>
+            {% endif %}
+          {% endfor %}
+        </span>
       </div>
-      <a class="post-excerpt" style="font-family:'Droid Arabic Kufi';" href="{{ post_url }}">
+      <a class="post-excerpt" href="{{ post_url }}">
         <p>
         {{ excerpt }}
         </p>
