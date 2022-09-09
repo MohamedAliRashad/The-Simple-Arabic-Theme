@@ -3,17 +3,32 @@
   <h2 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h2>
 
   <p class="post-meta">
-    <i class="fa-solid fa-calendar-days"></i>
+    {% assign archives_url = '/archives.html' | relative_url %}
+    <a href="{{ archives_url }}" style="text-decoration: none"><i class="fa-solid fa-calendar-days" style="color: rgb(0, 255, 0);"></i></a>
     <time id="date-published" class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" style="font-family:'Droid Arabic Kufi'; font-size:16px ;font-weight: bold;">
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
       {{ page.date | date: date_format }}
     </time>
 
-    {% assign article = page.content %}
-    {% assign lang = page.lang %}
-    {%- include functions.html func='get_reading_time' -%}
-    {% assign reading_time = return %}
-    <span class="left-vsplit" style="font-family:'Droid Arabic Kufi'; font-size:16px; font-weight: bold;"><i class="fa-solid fa-feather-pointed"></i> {{ heading | default: page.author | escape }}</span>
+    {% assign about_url = '/about.html' | relative_url %}
+    <span class="left-vsplit"><a href="{{ about_url }}" style="text-decoration: none"><i class="fa-solid fa-feather-pointed" style="color: yellow;"></i></a> {{ heading | default: page.author | escape }}</span>
+
+    <span class="left-vsplit">
+      {% assign categories_url = '/categories.html' | relative_url %}
+        <a href="{{ categories_url }}" style="text-decoration: none">
+        {% if page.categories.size > 1 %}
+        <i class="fa-solid fa-tags" style="color: red;"></i> 
+        {% else %} 
+        <i class="fa-solid fa-tag" style="color: red;"></i> 
+        {% endif %}
+      </a>
+      {% for category in page.categories %}
+        {{- heading | default: category | escape -}}
+      {% if category !=  page.categories[-1] %}
+        <span style="font-size: 16px; font-weight: bold;">و</span>
+      {% endif %}
+    {% endfor %}
+    </span>
   </p>
 
 </header>
