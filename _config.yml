@@ -134,11 +134,11 @@ header_pages:
   - about.html
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "\n"
+    subheading: ""
+    banner: ""
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
