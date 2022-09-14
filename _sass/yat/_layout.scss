@@ -105,11 +105,11 @@ html {
   .site-brand-inner {
     @include relative-font-size(1.125);
     // font-weight: $base-font-weight;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
     transition: 0.1s filter color;
-    font-family: 'Cairo';
+    font-family: 'Rakkas';
     font-weight: bold;
-    font-size: 25px;
+    font-size: 35px;
 
     &,
     &:visited {
