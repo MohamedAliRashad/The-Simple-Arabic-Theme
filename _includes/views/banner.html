@@ -100,8 +100,13 @@
           })();
         </script>
       {%- else -%}
+        {% if banner_image == site.baseurl %}
+        <div style="background-image: url('{{ site.default_img | relative_url }}')"></div>
+        <img class="img-placeholder" src="{{  site.default_img | relative_url }}" alt="post_image">
+        {% else %}
         <div style="background-image: url('{{ banner_image }}')"></div>
         <img class="img-placeholder" src="{{ banner_image }}" alt="post_image">
+        {%- endif -%}
       {%- endif -%}
     </div>
     <div class="wrapper">

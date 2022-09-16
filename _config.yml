@@ -51,6 +51,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/The-Simple-Arabic-Theme" # the subpath of your site, e.g. /blog
 url: "https://mohamedalirashad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "/The-Simple-Arabic-Theme/assets/images/arabic-half-moon.svg" # the favicon for your site
+default_img: "/assets/images/banners/6.webp" # The image your visitors see on your home page (الرئيسية)
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -59,9 +60,6 @@ yat:
 
 # If you want more debug log, you can set true
 # debug: true
-
-# If you don't want transparent header, you can set false
-# header_transparent: true
 
 # If you want to change the content width, you can set to another value
 content_width: "1080px"
