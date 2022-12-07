@@ -69,7 +69,7 @@ title: اصنع محتوى
             var c = document.forms["post-details"]["author-input"].value;
             var d = document.forms["post-details"]["subject-input"].value;
 
-            let header = `---\nlayout: post \ntitle: ${a} \nsubheading: ${b} \nauthor: ${c} \ncategories: ['${d}'] \nbanner:\n  image: "assets/images/banners/1.webp"\n  opacity: 0.618\n  background: "#000"\n  height: "100vh"\n  min_height: "38vh"\n  heading_style: "font-family:'Droid Arabic Kufi'; font-size: 40px; font-weight: bold;"\n  subheading_style: "font-family:'Droid Arabic Kufi'; font-size: 20px; font-weight: bold; color: gold" \nsidebar: [] \n---\n`
+            let header = `---\nlayout: post \ntitle: ${a} \nsubheading: ${b} \nauthor: ${c} \ncategories: ['${d}'] \nbanner:\n  image: "assets/images/banners/1.webp"\n  opacity: 0.618\n  background: "#000"\n  height: "100vh"\n  min_height: "38vh"\n  heading_style: "font-family:'Droid Arabic Kufi'; font-size: 40px; font-weight: bold;"\n  subheading_style: "font-family:'Droid Arabic Kufi'; font-size: 20px; font-weight: bold; color: gold" \n---\n`
             var text = editor.value();
 
             result = header.concat(text);
